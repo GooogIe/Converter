@@ -192,7 +192,7 @@ def main():
 
 	utils.action(str(len(toconvert))+" files loaded.")
 	utils.action("Size of files to be converted: "+str(utils.getdirsize(inputdir))+" MB.")
-	utils.action("Estimated conversion time (normalization not included): "+str(utils.getdirsize(inputdir)*cspeed/60)/self.threads+" minutes.")
+	utils.action("Estimated conversion time (normalization not included): "+str((utils.getdirsize(inputdir)*cspeed/60)/int(threads))+" minutes.")
 	MyConverter.getSettings()
 	ans = ''
 	while ans != 'no' and ans != 'yes' and ans!= 'y' and ans!= 'n':
