@@ -71,7 +71,6 @@ class Converter:
 			infile = fnames[0]
 			outfile = fnames[1]
 			out = fnames[2]
-			print outfile
 			self.createsubdir(outfile)
 			if utils.getfileext(infile) in convertable:
 				if self.verbosity == False:
